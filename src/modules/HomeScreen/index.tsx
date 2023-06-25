@@ -1,10 +1,15 @@
 import React from 'react';
-import {Container, TitleText} from './styles';
+import {RootContainer} from '../../theme/styles';
+import {LoginContainer} from './components/LoginContainer';
 
 export const HomeScreen: React.FC = () => {
   return (
-    <Container>
-      <TitleText>Hello World!</TitleText>
-    </Container>
+    <RootContainer
+      flex={1}
+      bgColor="background"
+      justifyContent="center"
+      paddingAll="xs">
+      <LoginContainer />
+    </RootContainer>
   );
 };
